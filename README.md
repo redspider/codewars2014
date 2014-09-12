@@ -32,13 +32,16 @@ a bit and we re-split (using regex in my case, a macro in Martyns) back to 7 per
 ASCII but that didn't work.
 
 Then Martyn put it back into a square again then turned his laptop top me and said "Can you go cross-eyed?". He'd noticed
-that there was something of a pattern to the output, oen that became pretty clear once we replaced the 0's and 1's with
-things that were more obviously pixels.
+that there was something of a pattern to the output, one that became pretty clear once we replaced the 0's and 1's with
+things that were more obviously pixels. Still not sure what the cross-eyed bit was about tho.
 
 It was a QR Code, all that we needed to do was interpret it. This was somewhat problematic, because it turns out QR Codes
  need to be kinda square, and because we were printing ours out on a terminal it was stretched downwards instead. We
  scrambled for various strategies to make it look right including using the unicode block character. First to find a
  solution was Martyn who took a screenshot of the terminal output and then squashed it using Gimp.
+ 
+ Grant later pointed out we could have made it square just by printing two blocks or two spaces for each "pixel",
+ which is far easier and is what I implemented in the reference solution.
  
 #### Question 3: Russian Dolls
 
@@ -78,7 +81,7 @@ all you needed to do was implement a rock-paper-scissors knock-out tournament to
 of the winner and the other finalist as the code.
 
 Given that Nigel does getyourgameon.co.nz knockout tournaments were something of a specialty, we did two independent 
- solutions - Nigel and Martyn wrote a hack and I did something vaguely respectable if you were drunk and it was dark.
+ solutions - Nigel and Martyn wrote a hack and I did something vaguely respectable.
  
 We ran into one issue late in the day - it hadn't been clear from the instructions whether the set of moves started
 again from the top each game, or whether the moves just kept getting consumed by each game played. We guessed the first
