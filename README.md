@@ -138,6 +138,14 @@ functions too - SQRT() and MAX(). Nigel and Martyn managed to work around that b
 complex it could have got ugly. Later after the match we theorised that a truly nasty Grant could have put "exit;" 
 in a formula.
 
+There was another slight hitch - the forms had a CSRF token, which forced Nigel and Martyn to switch from using:
+
+```
+$out = `curl --insecure $url`
+```
+
+as their request code to using machanize instead.
+
 Finally we were approaching the solution. With one caveat - Martyn realised that he wasn't saving the output HTML
 anywhere so when it hit 100 we wouldn't actually have the solution code. Fortunately mean Grant had decided to be
 nice in this instance and output the code in the formula box so we got it anyway.
