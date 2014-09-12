@@ -144,6 +144,8 @@ nice in this instance and output the code in the formula box so we got it anyway
 
 ### Final notes
 
+> Our shared dropbox is a wasteland of horror code and mutilated files  
+
 We had good fun doing the various problems and they felt like a good level of challenge. We are thoroughly embarrassed by
 the code we wrote and hope it never sees the light of day. The reference solutions here are intended to redeem us to some
 degree.
