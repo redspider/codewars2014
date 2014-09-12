@@ -29,6 +29,8 @@ We basically mangled this with our text editors to make the key trivial to parse
 
 16:35
 
+> "We spent half the time waving our phones at invalid QR codes like complete muppets"
+
 This was the closest we came to being genuinely stumped. The file contained 441 1s and 0s and the comment said "Almost
 a Perfect Square". We initially guessed it needed to be in a square but rapid math and dodgy regex splitting meant
 that we had one character left over some how. This led us to conclude it wasn't actually supposed to be a square for
@@ -46,6 +48,7 @@ It was a QR Code, all that we needed to do was interpret it. This was somewhat p
  
  Grant later pointed out we could have made it square just by printing two blocks or two spaces for each "pixel",
  which is far easier and is what I implemented in the reference solution.
+ 
  
 #### Question 3: Russian Dolls
 
