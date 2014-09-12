@@ -124,5 +124,10 @@ Finally we were approaching the solution. With one caveat - Martyn realised that
 anywhere so when it hit 100 we wouldn't actually have the solution code. Fortunately mean Grant had decided to be
 nice in this instance and output the code in the formula box so we got it anyway.
 
+### Final notes
+
+We had good fun doing the various problems and they felt like a good level of challenge. We are thoroughly embarrassed by
+the code we wrote and hope it never sees the light of day. The reference solutions here are intended to redeem us to some
+degree.
 
 
