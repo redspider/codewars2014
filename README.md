@@ -18,12 +18,16 @@ if you're on the right track.
 
 #### Question 1: Key and Ciphertext
 
+03:02
+
 The file contained a key in the form of a Letter -> Hex code, and a bunch of text at the bottom. Performing a replace
 using the key resulted in an ASCII rendering of the solution.
 
 We basically mangled this with our text editors to make the key trivial to parse and then did a quick substitution.
 
 #### Question 2: Square Bits
+
+16:35
 
 This was the closest we came to being genuinely stumped. The file contained 441 1s and 0s and the comment said "Almost
 a Perfect Square". We initially guessed it needed to be in a square but rapid math and dodgy regex splitting meant
@@ -45,6 +49,8 @@ It was a QR Code, all that we needed to do was interpret it. This was somewhat p
  
 #### Question 3: Russian Dolls
 
+08:50
+
 This one was mostly straightforward - the file started off uuencoded, which contained a gzipped text file containing a
 hex dump of a zip file containing 27 individual PDF files consisting of a base64'd PNG file, inside the data block of
 which was embedded a riddle to come up with the solution.
@@ -62,6 +68,8 @@ in there. The riddle basically said the solution was the date of the moon landin
 
 #### Question 4: Turtles all the way
 
+09:25
+
 Question 4 was a zip file containing a text file. The text file was a simple set of Turtle/LOGO instructions for drawing
 an image. It turned out implementing the turtle was trivial, but we found ourselves suddenly stumped when we needed to
 render the output - it was far too big to output as blocks on the terminal and stupidly none of us had thought to add
@@ -74,6 +82,8 @@ implemented in the competition and we still feel shamed.
 Next time I'll make sure I have PIL installed.
 
 #### Question 5: Rock paper scissors
+
+24:00
  
 This one was interesting mostly because it was more of a programming problem than the previous questions. The file
 contained a set of files containing moves for various players in a Rock Paper Scissors tournament. To find the solution
@@ -88,6 +98,8 @@ again from the top each game, or whether the moves just kept getting consumed by
 but it turned out to be the latter. This required some last minute rewriting of the hack but we got the solution.
 
 #### Question 6: Oh god what I don't even
+
+28:37
 
 The final problem came in two parts, and the first part is notable primarily because we did possibly the least efficient
 solution ever. In essence it consisted of a set of single-line PNGs in an HTML file. The task was to line the slices up
