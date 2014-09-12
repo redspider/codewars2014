@@ -80,7 +80,7 @@ some kind of image library.
 
 We attacked the problem from multiple directions but the winner on the day was Martyn with an enormous HTML file full of
 ascii output surrounded in a pre tag and resized via css to one pixel each. This may have been the dirtiest hack we
-implemented in the competition and we still feel shamed.
+implemented in the competition and we still feel shamed/awesome.
 
 Next time I'll make sure I have PIL installed.
 
