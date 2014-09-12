@@ -151,3 +151,23 @@ the code we wrote and hope it never sees the light of day. The reference solutio
 degree.
 
 
+#### Good tools
+
+Just some quick notes on tools we made use of:
+
+ * file
+ * strings
+ * uudecode
+ * gunzip
+ * unzip
+ * tar
+ * perl
+ * python
+ * vim
+ * PyCharm
+ * Gimp
+ * Dropbox
+ * curl
+ * xxd
+
+
