@@ -47,8 +47,7 @@ hex dump of a zip file containing 27 individual PDF files consisting of a base64
 which was embedded a riddle to come up with the solution.
    
 Each of the "russian doll" of file formats was pretty simple, we just used the shell command "file" liberally until we
-hit the hex dump. I'm not sure how we got the hex dump into the zip file, Martyn had something that did it, then we
-hit the PDF files.
+hit the hex dump. We used "xxd -r" to change the hex dump into the zip file, then we hit the PDF files.
 
 We split into two teams with that - two of us started copy/pasting the text into text files, Martyn went for automation
 and got a solution to pull the text. In fact that was less annoying than trying to reassemble the pages into the right
