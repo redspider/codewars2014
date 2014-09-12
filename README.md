@@ -65,7 +65,7 @@ render the output - it was far too big to output as blocks on the terminal and s
 some kind of image library.
 
 We attacked the problem from multiple directions but the winner on the day was Martyn with an enormous HTML file full of
-ascii output surrounded in a <pre> tag and resized via css to one pixel each. This may have been the dirtiest hack we
+ascii output surrounded in a pre tag and resized via css to one pixel each. This may have been the dirtiest hack we
 implemented in the competition and we still feel shamed.
 
 Next time I'll make sure I have PIL installed.
