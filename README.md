@@ -57,3 +57,72 @@ but there were only 27 of them so we renamed them manually.
 We got the PNG, then out of little more than habit I ran "strings" on it and sure enough there was some text embedded 
 in there. The riddle basically said the solution was the date of the moon landing in ISO date format.
 
+#### Question 4: Turtles all the way
+
+Question 4 was a zip file containing a text file. The text file was a simple set of Turtle/LOGO instructions for drawing
+an image. It turned out implementing the turtle was trivial, but we found ourselves suddenly stumped when we needed to
+render the output - it was far too big to output as blocks on the terminal and stupidly none of us had thought to add
+some kind of image library.
+
+We attacked the problem from multiple directions but the winner on the day was Martyn with an enormous HTML file full of
+ascii output surrounded in a <pre> tag and resized via css to one pixel each. This may have been the dirtiest hack we
+implemented in the competition and we still feel shamed.
+
+Next time I'll make sure I have PIL installed.
+
+#### Question 5: Rock paper scissors
+ 
+This one was interesting mostly because it was more of a programming problem than the previous questions. The file
+contained a set of files containing moves for various players in a Rock Paper Scissors tournament. To find the solution
+all you needed to do was implement a rock-paper-scissors knock-out tournament to figure out who won, and use the names
+of the winner and the other finalist as the code.
+
+Given that Nigel does getyourgameon.co.nz knockout tournaments were something of a specialty, we did two independent 
+ solutions - Nigel and Martyn wrote a hack and I did something vaguely respectable if you were drunk and it was dark.
+ 
+We ran into one issue late in the day - it hadn't been clear from the instructions whether the set of moves started
+again from the top each game, or whether the moves just kept getting consumed by each game played. We guessed the first
+but it turned out to be the latter. This required some last minute rewriting of the hack but we got the solution.
+
+#### Question 6: Oh god what I don't even
+
+The final problem came in two parts, and the first part is notable primarily because we did possibly the least efficient
+solution ever. In essence it consisted of a set of single-line PNGs in an HTML file. The task was to line the slices up
+such that the red pixel near the start of each line matched up vertically, thus giving you the solution.
+
+We could have done this any number of trivial ways, either by editing the HTML in the inspector to line it up using 
+positions or pulling the images into an image editor. Instead we all did the dumb thing and started coding methods to
+find the offsets - I don't even know why.
+  
+Martyn used xpm mode in vim to obtain the offsets as characters and called them out to Nigel who modified the HTML to
+reflect those. This gave us the URL to the second part.
+
+The second part was just mean. Grant, you're mean.
+
+It involved an HTML "spreadsheet" in which a grid of numbers were displayed, and a "formula" input box. The formula
+specified something like A4+G2, and we were required to put the answer into the answer box and submit.
+
+The issue was that there was 100 of these back to back, and you had 5 seconds to answer each one or you had to go
+back to the start. They were also somewhat randomly generated.
+
+Again we split into two parts both aiming for a solution. There were two main tricks - first was parsing the HTML
+itself to get the table. Using (in my case) lxml and .cssselect made this straightforward enough. But two main
+barriers slowed us down a bit.
+
+The first was somewhat unintentional - the website that was hosting the challenge had an invalid SSL certificate, and
+every library we generally use to do this kind of thing gets really angry about those. It took a bit of time to bypass
+those checks somehow.
+
+The second was the interpretation of the formula itself. We took two different tracks on this - Nigel and Martyn went
+with mangling it so it could be eval'd in perl and I started on a proper parser in case that turned out not to work. It
+almost came down to my backup plan - around question 60 suddenly instead of pure math the formulas started using 
+functions too - SQRT() and MAX(). Nigel and Martyn managed to work around that but if the formulas had become much more
+complex it could have got ugly. Later after the match we theorised that a truly nasty Grant could have put "exit;" 
+in a formula.
+
+Finally we were approaching the solution. With one caveat - Martyn realised that he wasn't saving the output HTML
+anywhere so when it hit 100 we wouldn't actually have the solution code. Fortunately mean Grant had decided to be
+nice in this instance and output the code in the formula box so we got it anyway.
+
+
+
