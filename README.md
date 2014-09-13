@@ -177,5 +177,16 @@ Just some quick notes on tools we made use of:
  * Dropbox
  * curl
  * xxd
+ 
+ 
+ #### Things to add to our list for next time:
+ 
+  * Routines for drawing images
+  * Routines for pulling text from PDFs
+  * Routines for extracting metadata (or possibly just remembering to use the identify tool)
+  * A routine for a sandboxed parser that we can add functions to
+  * Maybe a turtle interpreter because everyone likes turtles
+  * Routine for turning html table into array (I think there's a python lib for that somewhere)
+  * Numbers to words and back again perhaps
 
 
