@@ -49,6 +49,12 @@ It was a QR Code, all that we needed to do was interpret it. This was somewhat p
  Grant later pointed out we could have made it square just by printing two blocks or two spaces for each "pixel",
  which is far easier and is what I implemented in the reference solution.
  
+Later on Twitter @monsterlemon pointed out:
+
+> after the turtle, it occurred to me that adding P1 21 21 to top of 'square' file should make valid .pbm - then just 'display' file
+
+and he was right. That would have been much, much easier.
+ 
  
 #### Question 3: Russian Dolls
 
@@ -176,17 +182,16 @@ Just some quick notes on tools we made use of:
  * Gimp
  * Dropbox
  * curl
- * xxd
+ * xxd 
  
+#### Things to add to our list for next time:
  
- #### Things to add to our list for next time:
- 
-  * Routines for drawing images
-  * Routines for pulling text from PDFs
-  * Routines for extracting metadata (or possibly just remembering to use the identify tool)
-  * A routine for a sandboxed parser that we can add functions to
-  * Maybe a turtle interpreter because everyone likes turtles
-  * Routine for turning html table into array (I think there's a python lib for that somewhere)
-  * Numbers to words and back again perhaps
-
+ * Routines for drawing images
+ * Routines for pulling text from PDFs
+ * Routines for extracting metadata (or possibly just remembering to use the identify tool)
+ * A routine for a sandboxed parser that we can add functions to
+ * Maybe a turtle interpreter because everyone likes turtles
+ * Routine for turning html table into array (I think there's a python lib for that somewhere)
+ * Numbers to words and back again perhaps
+ * PBM image format - useful for the QR code square, 
 
